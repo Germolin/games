@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import PermanentDrawer from '../components/drawer';
+import PersistentDrawer from '../components/drawer';
 
 injectTapEventPlugin();
 
@@ -10,7 +10,7 @@ class Template extends Component {
            
                 <div>
                     <header>
-                        <PermanentDrawer />
+                        <PersistentDrawer />
                     </header>
                     <main>
                         {this.props.children}
