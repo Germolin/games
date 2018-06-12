@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import Button from '@material-ui/core/Button';
+import PermanentDrawer from '../components/drawer';
 
 injectTapEventPlugin();
 
@@ -10,13 +10,7 @@ class Template extends Component {
            
                 <div>
                     <header>
-                        <h1>Games!</h1>
-                        <Button 
-                        variant="contained" 
-                        color="primary"
-                        onTouchTap={() => {console.log("I work")}}>
-                        Hello World
-                        </Button>
+                        <PermanentDrawer />
                     </header>
                     <main>
                         {this.props.children}

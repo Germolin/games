@@ -51,7 +51,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "postinstall": "set GRAPHQL_ENDPOINT=https://api.graph.cool/relay/v1/cji658cgx2rzk0154n14t4lno"
   },
   "jest": {
     "collectCoverageFrom": [
